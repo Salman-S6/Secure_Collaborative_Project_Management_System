@@ -10,7 +10,6 @@ use App\Http\Controllers\Api\Team\TeamController;
 use App\Http\Controllers\Api\Team\TeamMembershipController;
 use Illuminate\Support\Facades\Route;
 
-// Route::post('register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
 
 Route::middleware('auth:sanctum')->group(function () {
